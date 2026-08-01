@@ -66,6 +66,7 @@ public class First extends Applet implements ActionListener{
         switch(operation){
             case "Addition":
                 result = a + b;
+                system.out.println("chnaged code ans"+result);
                 break;
 
             case "Subtraction":
