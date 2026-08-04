@@ -1,29 +1,55 @@
-import java.awt.Graphics;
-import java.awt.Color;
-import java.awt.Font;
-import java.applet.Applet;
+/*import java.applet.*;
 import java.awt.*;
-import java.applet.*;
-/*<applet code="Applet1" width=400 height=300></applet>*/
-public class First extends Applet{
-    public void paint(Graphics g){
-        g.setColor(Color.blue);
-        Font font = new Font("Arial", Font.BOLD, 20);
-        g.setFont(font);
-        g.drawString("this is First APPLET ",100,110);
-    }
-}
+import java.awt.event.*;
+import java.awt.event.ActionListener;*/
 
-/*import java.applet.Applet;
+/*<applet code="Factorial" width=500 height=250></applet>*/
+/*public class Factorial extends Applet implements ActionListener{
+    Label L1, L2;
+    TextField T1,T2;
+    Button B1;
+    public void init(){
+        L1= new Label("Enter the number");
+        add(L1);
+        T1= new TextField(10);
+        add(T1);
+        L2= new Label("Factorial is ");
+        add(L2);
+        T2= new TextField(10);
+        add(T2);
+        B1 = new Button("Compute");
+        add(B1);
+        B1.addActionListener(this);
+    }
+    public void actionPerformed(ActionEvent e){
+        if(e.getSource()==B1){
+            int value = Integer.parseInt(T1.getText());
+            int fact = factorial(value);
+            T2.setText(String.valueOf(fact));
+        }
+    }
+
+    int factorial(int n){
+        if(n==0){
+            return 1;
+        }
+        else{
+            return n*factorial(n-1);
+        }
+    }
+
+}*/
+
+import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
 
 import javax.swing.JOptionPane;
 
-import javafx.scene.text.Text;
+//import javafx.scene.text.Text;
 
-/*<applet code="First" width=500 height=250></applet>*/
-public class First extends Applet implements ActionListener{
+/*<applet code="Factorial" width=500 height=250></applet>*/
+public class Factorial extends Applet implements ActionListener{
     Label L1, L2,L3;
     TextField T1,T2,T3;
     Button B1;
@@ -66,7 +92,6 @@ public class First extends Applet implements ActionListener{
         switch(operation){
             case "Addition":
                 result = a + b;
-                system.out.println("chnaged code ans"+result);
                 break;
 
             case "Subtraction":
@@ -93,6 +118,6 @@ public class First extends Applet implements ActionListener{
         T3.setText(String.valueOf(result));  //  show answer here
        }
     }
-    System.out.println("This is CSE branch");
-}*/
-}*/
+}
+
+
