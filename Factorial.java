@@ -92,6 +92,7 @@ public class Factorial extends Applet implements ActionListener{
         switch(operation){
             case "Addition":
                 result = a + b;
+                System.out.println(result);
                 break;
 
             case "Subtraction":
