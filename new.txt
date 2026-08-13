@@ -1,1 +1,1 @@
-Think of Git as the camera taking snapshots of your work locally, and GitHub as Instagram where you upload those snapshots to share them with the world.
+Think of Git as the camera taking snapshots of your work locally, and GitHub as Instagram where you upload those snapshots to share them with the world.hello world
