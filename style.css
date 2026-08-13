@@ -1,0 +1,90 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+}
+
+.page-wrapper{
+    min-height: 200px;
+    display: flex;
+    justify-content: top;
+    align-items: top;
+}
+
+.Product{
+    width:600px;
+    background-color: whitesmoke;
+    border-radius: 35px;
+    overflow: hidden;
+    box-shadow: 0 0 0px rgba(0,0,0,0.5);/*--red, green, blue, alpha*/
+    transition: tranfrom 0.5s ease;
+}
+
+.Product:hover{
+    transform: translateY(-6px);
+}
+
+.product-image{ /* this is for product hieght*/
+    width: 100%;
+    height: 500px;
+    object-fit:contain;
+    transition: transform 0.3s ease;
+}
+
+.Product:hover .product-image{ /* this is for moment of the product*/
+    transform: scale(1.05);
+}
+
+.product-content{
+    padding: 25px;
+}
+
+.Product-Card{
+    font-size: 25px;
+    margin: 0 0 25px;
+
+}
+
+.Product-price{ /* no namespace is allowed */
+    font-size: 25px;/* for product pice color*/
+    font-weight: lighter;
+    color: green;
+    margin:0 0 5px;
+}
+
+.product-discrption{
+     font-size: larger;/* px means the size os the discprotion without px it give vry small size of content */
+     font-weight: 25px;
+     color: black;
+     margin-bottom:35px;
+     line-height: 1.5px;
+     
+
+}
+
+.Add-to-cart{
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: large;
+    color:white;
+    background-color: #4c4c4c;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+}
+
+.Add-to-cart:hover,.Add-to-cart:focus-within{/* every thing giving same */
+    background-color: green;/* this is written for changing colour  of the button when we click*/
+    outline: none;
+}
+@media ( max-width:300px) {
+    .Product-Card{
+        width:100%;
+    }
+    
+}
