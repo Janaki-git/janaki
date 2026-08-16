@@ -1,3 +1,5 @@
 Git is a local software application that tracks your project's file history, while GitHub is a cloud-based hosting platform that stores your Git repositories online so you can share and collaborate on code with others.
 
 Think of Git as the camera taking snapshots of your work locally, and GitHub as Instagram where you upload those snapshots to share them with the world.
+
+creating a pull request that can see the other viewers 
